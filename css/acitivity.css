@@ -1,0 +1,9 @@
+.page { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.page .title-text { text-align: center; line-height: 2rem; margin-top: 2.5rem; }
+.page .start { position: relative; width: 7.5rem; height: 7.5rem; margin: 0 auto; margin-top: 2.5rem; }
+.page .start .start-content { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: url(../img/start.png) no-repeat center center; background-size: cover; }
+.page .content-text { text-align: center; line-height: 2rem; margin-top: 2.5rem; }
+
+.car-img { width: 3.75rem; height: 2rem; }
+
+/*# sourceMappingURL=acitivity.css.map */

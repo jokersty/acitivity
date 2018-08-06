@@ -1,0 +1,40 @@
+@function toRem($px) {
+  @return $px/(20*2)+rem
+}
+
+.page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  .title-text {
+    text-align: center;
+    line-height: toRem(80);
+    margin-top: toRem(100);
+  }
+  .start {
+    position: relative;
+    width: toRem(300);
+    height: toRem(300);
+    margin: 0 auto;
+    margin-top: toRem(100);
+    .start-content {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: url(../img/start.png) no-repeat center center;
+      background-size: cover;
+    }
+  }
+  .content-text {
+    text-align: center;
+    line-height: toRem(80);
+    margin-top: toRem(100);
+  }
+}
+.car-img {
+  width: toRem(150);
+  height: toRem(80);
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>200W车主活动</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/acitivity.css">
+</head>
+<body>
+<script>
+    (function () {
+        var e = null
+        window.onresize = function () {
+            clearTimeout(e), e = setTimeout(f, 300)
+        }, f()
+
+        function f() {
+            var cw = document.documentElement.clientWidth > 414 ? 414 : document.documentElement.clientWidth
+            document.querySelector("html").style.fontSize = cw / 18.75 + "px"
+        }
+    })(window)
+</script>
+<div class="container" id="container">
+    <!--方便和PPT对应，直接从第三页起,以下标签先后顺序和动画一致-->
+    <div class="page page3 page4 page5" id="page3">
+        <div class="title-text" id="titleText">
+            东风Honda售后服务</br>
+            感恩有您·同心同行</br>
+            2017.3.15~2018.8.20</br>
+            注册认证车主突破</br>
+            20000000
+        </div>
+        <div class="start" id="start">
+            <div class="start-content" id="startBtn"></div>
+            <div class="start-content" id="startHeader" style="display: none"></div>
+        </div>
+        <div class="content-text" id="contentText" style="display: none">
+            <p>XXXX年XX月XX日，您成为我们的注册认证车主</br>
+                东风Honda售后服务</br>
+                已陪伴您XXXX天</br>
+                2,000,000同行人</br>
+                感恩有您</p>
+        </div>
+    </div>
+    <div class="page page7" id="page7">
+
+    </div>
+</div>
+<script src="libs/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/acitivity.js"></script>
+</body>
+</html>
